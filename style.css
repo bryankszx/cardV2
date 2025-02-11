@@ -1,0 +1,110 @@
+:root{
+    --cor-hover: #ffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-boxs;
+}
+ul, ol ,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    background-color: rgb(39, 38, 38);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    padding: 16px;
+    position: fixed; /* Fixando o menu no topo */
+    top: 0; /* Garantir que o menu fique no topo */
+    left: 0; /* Garantir que o menu ocupe a largura inteira */
+    width: 100%; /* Garantir que o menu tenha 100% de largura */
+    z-index: 10; /* Colocar o menu acima de outros elementos */
+
+}
+.menu a {
+    padding: 12px;
+    transition: .5s;
+    align-items: center;  /* Centraliza o conteúdo dentro do link */
+    
+}
+
+.menu a:hover {
+    background-color: var(--cor-hover);
+}
+
+.menu a:hover{
+    background-color:  var(--cor-hover)
+
+}
+.menu img {
+    height:40px;
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 251, 251);
+    
+}
+
+.container {
+    display: flex;
+    gap: 30px; 
+    justify-content: center;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white; 
+    transition: transform 0.3s ease-in-out;
+    width: 250px; 
+    height: 350px; 
+}
+.card:nth-child(1)  {
+    background-color: rgb(214, 16, 16);
+}
+
+.card:nth-child(2)  {
+    background-color: rgb(255, 0, 0);
+}
+
+.card:nth-child(3)  {
+    background-color: rgb(236, 40, 40);
+}
+
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
